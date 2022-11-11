@@ -41,12 +41,10 @@ nav ul li a{
 
 .logo{
     width: 50px;
-    cursor: pointer;
 }
 
 .menu-icon{
     width: 30px;
-    cursor: pointer;
     margin-left: 40px;
 }
 
@@ -128,12 +126,10 @@ h5{
 {
     .logo{
         width: 40px;
-        cursor: pointer;
     }
 
     .menu-icon{
         width: 25px;
-        cursor: pointer;
         margin-left: 40px;
     }
 
