@@ -5,23 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora para Aquários</title>
-    <link rel="shortcut icon" href="../imagens_aquario/image-removebg-preview.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagens_aquario/fishiconblack.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/calculadora.css">
+    <script src="../js/aquario.js"></script>
 </head>
 <body>
+    
     <div class="container">
+
+        <video autoplay loop muted plays-inline class="bg-video">
+            <source src="../imagens_calc/aquario.mp4" type="video/mp4">
+        </video>
+
         <div class="navbar">
             <img src="../imagens_aquario/image-removebg-preview.png" class="logo">
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="../html/tipospeixe.html">Tipos de Peixes</a></li>
-                    <li><a href="../html/criacaopeixe.html">Criação de Peixes</a></li>
+                    <li><a href="../html/tipospeixe.html">Criação de Peixes</a></li>
                 </ul>
             </nav>
             <img src="../imagens_aquario/menu.png" class="menu-icon">
         </div>
 
-    <h1>Calculadora</h1>
+    <h1>Calculadora para Aquários
+    </h1>
+
+   <div class="grupo_inputs">
+    <input placeholder="Comprimento do aquário em centímetros" type="number" id="compr" class="inputs">
+    <input placeholder="Altura do aquário em centímetros" type="number" id="alt" class="inputs">
+    <input placeholder="Largura do aquário em centímetros" type="number" id="larg" class="inputs">
+    <div class="grupo_botões">
+    <button onclick="Calcule()" id="calc" class="button">Calcular</button>
+    </div>
+    </div>
+
+    <div class="containers">
+        <div class="resultados_img">
+            <img id="aquario_img" src="../imagens_aquario/aquarium.png">
+        </div>
+
+        <div class="resultados">
+            <p id="volume" class="rinputs">0L</p>
+            <span class="vol">Volume</span>
+            <p id="termo" class="rinputs">0W</p>
+            <span class="ter">Termóstato</span>
+            <p id="litrosph" class="rinputs">0L/h</p>
+            <span class="lph">Litros/hora</span>
+        </div>
+    </div>
+
 </body>
 </html>

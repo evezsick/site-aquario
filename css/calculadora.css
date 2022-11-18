@@ -1,18 +1,32 @@
-.container{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(63, 92, 189);
-    background-position: center;
-    background-size: cover;
-    padding-left: 8%;
-    padding-right: 8%;
-    box-sizing: border-box;
-    border: none;
+/* video de fundo */
+
+.bg-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+@media (min-aspect-ratio: 16/9){
+    .bg-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .bg-video{
+        width: auto;
+        height: 995px;
+    }
+}
+
+
+/* header */
+
+.container{
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .navbar{
@@ -36,6 +50,7 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 13px;
+    font-weight: bold;
 }
 
 .logo{
@@ -59,4 +74,184 @@ h1{
 p {
     color: #fff;
     text-align: justify;
+}
+
+/* inputs */
+
+.grupo_inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* inputs do calculo */
+
+.inputs {
+    width: 560px;
+    height: 40px;
+    display: grid;
+}
+
+/* inputs do resultado */
+
+.rinputs {
+    width: 100px;
+    height: 40px;
+    display: grid;
+    cursor: default;
+    text-align: center;
+    padding: 0 15px;
+}
+
+span {
+    color: white;
+}
+
+/* escondendo o spin do input */
+
+input[type=number]::-moz-inner-spin-button, 
+input[type=number]::-moz-outer-spin-button { 
+    -moz-appearance: none; 
+    margin: 0; 
+}
+
+
+input[type=number]::-moz-inner-spin-button, 
+input[type=number]::-moz-outer-spin-button { 
+    -moz-appearance: none; 
+    margin: 0; 
+}
+
+/* botão */
+
+button{
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+}
+
+/* containers */
+
+.containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+ }
+
+ .resultados_img > img{
+    margin-top: 33px;
+    width: 180px;
+    text-align: left;
+    display: flex; 
+    margin-right: 50px;
+}
+
+ .resultados {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+ }
+
+ /* alinhando os spans */
+
+.vol{
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    line-height: 1;
+    margin-left: 35px;
+ }
+
+ .ter{
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    line-height: 1;
+    margin-left: 150px;
+ }
+
+ .lph{
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    line-height: 1;
+    margin-left: 290px;
+ }
+
+
+/* media query */
+
+/* meia tela do notebook */
+
+@media screen and (max-width: 700px)
+{
+    .containers {
+        display: flex;
+        align-items: center;
+     }
+
+     .resultados_img > img{
+        margin-top: 33px;
+        width: 180px;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        margin-right: 50px;
+    }
+
+     .resultados {
+        margin-left: 50px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        position: relative;
+     }
+
+     /* alinhando os spans */
+
+    .vol{
+        color: white;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        line-height: 1;
+     }
+
+     .ter{
+        color: white;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        line-height: 1;
+        margin-left: 115px;
+     }
+
+     .lph{
+        color: white;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        line-height: 1;
+        margin-left: 218px;
+     }
+
+
 }

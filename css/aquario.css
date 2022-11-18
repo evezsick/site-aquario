@@ -79,7 +79,7 @@ p{
 
 .card{
     width: 200px;
-    height: 230px;
+    height: 200px;
     display: inline-block;
     border-radius: 10px;
     padding: 15px 25px;
@@ -121,6 +121,8 @@ h5{
 }
 
 /* media query */
+
+/* meia tela do pc */
 
 @media screen and (max-width: 1100px)
 {
@@ -183,4 +185,56 @@ h5{
     background-position: center;
     background-size: cover;
    }
+}
+
+/* meia tela do pc */
+
+@media screen and (max-width: 970px)
+{
+
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 40px;
+    }
+    
+    
+    .card{
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 16px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 10px 15px;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+/* meia tela do notebook */
+
+@media screen and (max-width: 700px)
+{
+
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 40px;
+    }
+    
+    
+    .card{
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 16px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 10px 15px;
+        background-position: center;
+        background-size: cover;
+    }
 }
